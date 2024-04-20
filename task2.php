@@ -1,7 +1,8 @@
 <?php
-function arrayUnique($lst)
+
+function arrayUnique($lst): array
 {
-    $result = array_values(array_unique($lst));
-    return $result;
+    return array_values(array_unique($lst));
 }
+
 print_r(arrayUnique([123, 123, 123, 22, 23, 24]));

@@ -1,6 +1,7 @@
 <?php
 
-function mostRecent(string $text): string {
+function mostRecent(string $text): string
+{
     $words = array_filter(explode(' ', $text));
 
     if (empty($words)) {

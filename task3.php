@@ -1,5 +1,5 @@
 <?php
-function cipher(string $text, int $key)
+function cipher(string $text, int $key): string
 {
     $russianAlphabet = 'абвгдежзийклмнопрстуфхцчшщъыьэюя';
     $russianAlphabetArray = preg_split('//u', $russianAlphabet, -1, PREG_SPLIT_NO_EMPTY);
